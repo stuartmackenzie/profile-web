@@ -15,6 +15,7 @@
   --btn-color-hover: #fafafa;
   --btn-background: rgba(3, 155, 155, 0.8);
   --btn-background-hover: rgba(189, 72, 0, 1);
+  --svg-fill-color: #cecece;
 }
 
 /* Global */
@@ -54,6 +55,35 @@ img {
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+.svg-icon {
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: var(--svg-fill-color);
+}
+
+.svg-icon:hover {
+  fill: var(--secondary-color);
+}
+
+.twitter-svg {
+}
+.yt-svg {
+}
+.dev-svg {
+}
+.envelope-open-svg {
+}
+.github-svg {
+}
+.chevron-down-svg {
+}
+.file-code-o-svg {
+}
+.mobile-svg {
+}
+.code-svg {
 }
 
 .btn {
@@ -233,6 +263,12 @@ nav {
   color: rgba(249, 105, 14, 1);
 }
 
+.nav-link svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 0 0.5rem;
+}
+
 @keyframes navLinkAnimate {
   from {
     opacity: 0;
@@ -360,15 +396,16 @@ main > .hero {
   min-width: 176px;
 }
 
-.scroll-down i {
-  color: #fafafa;
-  transition: color 300ms ease-in-out;
+.scroll-down svg {
+  fill: #fafafa;
+  transition: fill 300ms ease-in-out;
   margin-top: 1rem;
-  font-size: 3rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .scroll-down i:hover {
-  color: var(--btn-background-hover);
+  fill: var(--btn-background-hover);
 }
 
 /* About */
@@ -440,8 +477,9 @@ main > .services {
   cursor: default;
 }
 
-.service-item i {
-  font-size: 3.5rem;
+.service-item svg {
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 .service-item h2 {
@@ -501,9 +539,21 @@ main > .projects {
 }
 
 .project-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   margin: 2rem 0;
   font-size: 1.4rem;
+}
+
+.project-item svg {
+  fill: var(--a-color);
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 0.8rem;
+}
+
+.project-item svg:hover {
+  fill: var(--a-color);
 }
 
 /* Videos */
@@ -536,6 +586,22 @@ main > .contact .title-heading p {
   margin: 1rem 0;
 }
 
+.contact-item a {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item svg {
+  fill: var(--a-color);
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.8rem;
+}
+
+.contact-item svg:hover {
+  fill: var(--a-color);
+}
+
 /* Footer */
 
 footer {
@@ -562,8 +628,15 @@ footer {
 }
 
 .footer-coded-by p {
+  display: flex;
+  align-items: center;
   font-size: 1rem;
   color: #767676;
+}
+
+.footer-coded-by svg {
+  fill: #767676;
+  margin-right: 0.4rem;
 }
 
 .footer-social {
@@ -578,8 +651,11 @@ footer {
   margin: 0 0.5rem;
 }
 
-.footer-social i {
-  font-size: 1.5rem;
+.footer-social svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 0.4rem;
+  fill: var(--a-color);
 }
 
 /* Responsive */
